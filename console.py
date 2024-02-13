@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""
+Entry point to the console
+"""
 import cmd
 import json
 import re
