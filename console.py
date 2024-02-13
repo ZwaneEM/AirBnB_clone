@@ -57,7 +57,7 @@ class HBNBCommand(cmd.Cmd):
         if not args:
             print("** class name missing **")
             return False
-            
+
         try:
             a = eval(list_[0])
 
@@ -90,7 +90,7 @@ class HBNBCommand(cmd.Cmd):
             based on the class name and id
         """
         if self.validate_arg(arg):
-            
+
             _list = arg.split()
 
             instance_ = "{}.{}".format(_list[0], _list[1])
@@ -148,7 +148,7 @@ class HBNBCommand(cmd.Cmd):
                     my_obj.append(value.__str__())
 
             print(my_obj)
-        
+
     def do_update(self, arg):
         """
             updates an instance based on the class name

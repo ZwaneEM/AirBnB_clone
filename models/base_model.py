@@ -51,7 +51,12 @@ class BaseModel():
         """
         new_dict = self.__dict__.copy()
         new_dict["__class__"] = self.__class__.__name__
-        if not isinstance(self.created_at, str):
+        try:
+            new_dict["created_at"] = self.created_at.isoformat()
+            new_dict["updated_at"] = self.updated_at.isoformat()
+        except AttributeError:
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
             new_dict["created_at"] = self.created_at.isoformat()
             new_dict["updated_at"] = self.updated_at.isoformat()
 

@@ -12,9 +12,4 @@ class State(BaseModel):
     State of the property
     """
 
-    def __init__(self, *args, **kwargs):
-        """
-        Initializes a State instance
-        """
-
-        self.name = ""
+    name = ""
