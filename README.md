@@ -52,3 +52,17 @@ What is an UUID
 What is *args and how to use it
 What is **kwargs and how to use it
 How to handle named arguments in a function
+
+<h1> Usage </h1>
+
+<table>
+	<tr>
+		<th> Command </th>
+		<th> Example </th>
+	</tr>
+
+	<tr>
+		<td> Run the console </td>
+		<td> ./console.py </td>
+	</tr>
+</table>	
